@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+}
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.header {
+    display: flex;
+    position: relative;
+    height: 10vh;
+    background-color: grey;
+    text-align: center;
+    background: linear-gradient(27deg, rgba(10,177,152,1) 0%, rgba(112,217,52,1) 53%, rgba(46,59,125,1) 100%);
+    align-items: center;
+    justify-content: center;
+    
+}
+.lawn {
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    background-image:url(http://getdrawings.com/vectors/mower-vector-1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    left: -10rem;
+    animation:lawn 11s linear 1s infinite;
+}
+h1 {
+    text-shadow: 3px 3px 4px whitesmoke;
+    letter-spacing:3rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.scoreBoard {
+    display: block;
+    position: relative;
+    height: 60vh;
+    background-color: rgba(218, 205, 218, 0.657);
+    background-image: url(https://i.pinimg.com/originals/d8/73/aa/d873aaae4e8a7ed80a0411a115cde761.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 58%;
+}
+.moneyScore {
+    display: flex;
+    position: absolute;
+    right: 8%;
+    height: 10vh;
+    width: 10vh;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    font-size: 3rem;
+    color: green;
+    box-shadow:5px 5px 3px rgb(32, 25, 27);
+    text-shadow:1px 1px 1px rgb(216, 211, 211);
+    background: linear-gradient(99deg, rgba(8,227,194,0.6) 0%, rgba(201,217,52,0.6) 53%, rgba(125,70,46,0.6) 100%);
+    border-radius: 15%;
+    letter-spacing: 0.5rem;
+}
+.yourMoney {
+    position: absolute;
+    right: 15vh;
+    border:2px solid  rgb(15, 7, 8);
+    width: 4rem;
+    height: 6vh;
+    text-align: center;
+    background-image: url(../img/dollar.png);
+    font-size: 1rem;
+    box-shadow:2px 2px 1px black;
+    background-size: contain;
+}
+.partOfDay {
+    display: flex;
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    background-color: rgba(255, 255, 0, 0.192);
+    left: 2%;
+    background-image:url(https://i.pinimg.com/originals/16/c2/81/16c2813ab2d4a5ec3d2690bbe763729e.jpg);
+    background-size: cover;
+    border-radius: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    box-shadow:4px 4px 10px rgba(116, 116, 97, 0.9);
+    animation: turnDay 8s linear 1s infinite;
+}
+/* .partOfDay:hover {
+
+} */
+.grass {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 28vh;
+    width: 160vw;
+    background-image: url(../img/grass-hd.png);
+    background-size:contain;
+    background-repeat:repeat;
+    opacity: 0.8;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    height: 40vh;
+    background-color: rgb(88, 95, 94);
+    padding: 1%;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px 1px black;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.menu {
+    height: 40vh;
+    width: 45vw;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+
+}
+.menu > p {
+    font-size: 2.5rem;
+    letter-spacing: 2.5rem;
+    animation: changeColor 35s linear 1s infinite;
+    background: linear-gradient(99deg, rgba(8,227,194,0.5) 0%, rgba(201,217,52,0.5) 53%, rgba(125,46,64,0.5) 100%);
+    border-radius: 50%;
+    width: 25vw;
+    border: 2px solid saddlebrown;
+    margin: 0px auto;
+}
+.menu > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul > li {
+    display: none;
+    margin: 2%;
+    width: 9vw;
+    height: 9vh;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    color: rgb(235, 129, 54);
+    text-shadow:2px 2px 3px black;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+li:nth-child(1){
+    display: flex;
+    background:repeat url(../img/teeth.jpg);
+    background-size:90%;
+    background-position: center;
+    border-radius: 50%; 
+}
+li:nth-child(2){
+    background:url(../img/scissors-vector-png.png);
+    background-size:70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li:nth-child(3){
+    display: none;
+    background:url(../img/lawnmover.png);
+    background-size:52%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li:nth-child(4){
+    background:url(../img/powered.jpeg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+li:nth-child(5){
+    background-color: black;
+    background-image:url(../img/hard-working-student.jpg);
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+li:hover {
+    animation: moveUp 4s ease-in-out 0.1s infinite;
+    border: 2px solid green;
+}
+article {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    justify-content: space-between;
+    width: 55vw;
+    background: linear-gradient(14deg, rgba(177,184,151,0.9542191876750701) 0%, rgba(34,34,31,1) 69%, rgba(102,96,89,1) 90%);
+    width: 40vw;  
+    padding: 0.5%;
+    padding-left: 2%;
+    opacity: 0.8;
+    box-shadow: 5px 5px 7px black; 
+    font-size: 1.2rem; 
+}
+article > h2 {
+    position: absolute;
+    left: 11vw;
+    top: 9vh;
+    text-align: center;
+    color: rgba(69, 69, 223, 0.767) ;
+    font-size: 4rem;
+    text-shadow: 8px 8px 6px black;
+    opacity:0.8;
+    letter-spacing: 1rem;
+    animation: rules 20s ease-in-out 5s infinite;
+}
+article > p {
+    margin-top: -0.5vh;
+    text-shadow:3px 3px 4px black;
+
+}
+
+@keyframes lawn {
+    100%{transform: translateX(110vw)rotateZ(-30deg)}
+}
+@keyframes rules {
+    50%{transform:scale(1.5) rotate(5deg) translateY(5vh);color: rgb(63,94,251); opacity: 0.8;}
+}
+@keyframes moveUp {
+    50%{transform: translateY(-12%);
+    }
+}
+@keyframes changeColor {
+    25%{color: brown;
+    }
+    50%{color: rgb(42, 165, 165);
+    }
+    75%{color: rgb(161, 42, 165);
+    }
+}
+@keyframes turnDay {
+50% {
+transform:rotateY(190deg);
+background-image: url(../img/night.jpg);
+}
+}

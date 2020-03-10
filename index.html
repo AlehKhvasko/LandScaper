@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header"><div class="lawn"></div><h1>Landscaper</h1><img src="https://tenor.com/Zf6y.gif" alt=""></div>
+    <div class="mainWindow">
+        <div class="scoreBoard">scoreBoard
+            <div class="moneyScore">
+                $<p id="moneyScore"></p>            <div class="yourMoney"></div>
+            </div>
+            <div  class="partOfDay">Day :<p id="partOfDay" ></p>
+            </div>
+            <div id="grassCut" class="grass">Grass</div>
+        </div>
+        <div class="footer">
+            <div class="menu"><p>Menu</p>
+                <ul>
+                    <li class="menuHover" onclick="teeth()">Teeth</li>
+                    <li class="menuHover" id="scissorsDisp"  onclick="scissors()">Scissors</li>
+                    <li class="menuHover" id="LawnmoverDisp"  onclick="oldLawnmover()">Lawnmover</li>
+                    <li class="menuHover" id="battery"  onclick="newLawnmover()">battery-powered lawnmower</li>
+                    <li class="menuHover" class="menuHover" id="students"  onclick="starvingStudents()">starving students</li>
+                </ul
+            ></div>
+            <article>
+                <h2>Game Rules</h2>
+                <p>You are starting a landscaping business, but all you have are your teeth.</p><br/>
+                <p> Using just your teeth, you can spend the day cutting lawns and make $1.</p>
+                <br/><p>You are currently using your teeth, you can buy a pair of rusty scissors for $5.</p>
+                <br/>
+                <p>Using the rusty scissors, you can spend the day cutting lawns and make $5.</p>
+                <br/>
+                <p>You can buy an old-time push lawnmower for $25.</p>
+                <br/><p> You can spend the day cutting lawns and make $50.</p>
+                <br/><p> You can buy a fancy battery-powered lawnmower for $250.</p>
+                <br/>
+                <p> You can hire a team of starving students for $500.</p>
+                <br/>
+                <p> Using the the team of starving students, you can spend the day cutting lawns and make $250.</p>
+                <br/>
+                <p>You win the game when you have a team of starving students and $1000.</p>
+            </article>
+        </div>
+        </div>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+</html>
